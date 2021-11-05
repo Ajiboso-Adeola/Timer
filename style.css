@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+*{
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+}
+body{
+       font-family: "Red Hat Text", sans-serif;
+       background-color: hsl(235, 16%, 14%);
+       width: 100%;
+}
+/* container */
+.container{
+       display: flex;
+       flex-direction: column;
+       min-height: 68vh;
+       align-items: center;
+       justify-content: center;
+}
+.container h1{
+       text-transform: uppercase;
+       color: #fff;
+       font-size: 16px;
+       letter-spacing: 2px;
+       margin-bottom: 25px;
+}
+/* countdown */
+.countdown{
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: space-around;
+       text-align: center;
+}
+.countdown p{
+       padding: 20px;
+       background-color: hsl(236, 21%, 26%);
+       border-radius: 5px;
+       color: hsl(345, 95%, 68%);
+       font-size: 30px;
+}
+.countdown h3{
+       color: hsl(237, 18%, 59%);
+       text-transform: uppercase;
+       font-size: 14px;
+       margin-top: 10px;
+       letter-spacing: 2px;
+}
+.countdown div{
+       margin: 10px;
+}
+
+img{
+       max-width: 100%;
+}
+ul{
+       list-style-type:  none;
+}
+.stars{
+       position: absolute;
+}
+.hills{
+       position: absolute;
+       bottom: 0;
+}
+.social{
+       position: absolute;
+       z-index: 999;
+       left: 50%;
+       bottom: 30px;
+       transform:translateX(-50%)
+}
+  
+.social ul{
+       display: flex;
+}
+.social ul li{
+       margin: 0 20px;
+}
+
+.attribution {
+        font-size: 16px;
+         text-align: center; 
+       color: #fff;}
+.attribution a { 
+       color: hsl(228, 45%, 44%);
+}
+/* @media (max-width:500px){
+       .container{
+              max-width: auto;
+              padding: 0 20px;
+       }
+       .container h1{
+              text-align: center;
+       }
+} */
+@media(min-width:500px){
+       .stars img,
+       .hills img{
+              width: 1660px;
+       }
+       .container{
+              max-width: auto;
+              padding: 0 20px;
+       }
+       .container h1{
+              text-align: center;
+       }
+}
+@media(max-width:1660px){
+       .stars img,
+       .hills img{
+              width: 1920px;
+       }
+}
